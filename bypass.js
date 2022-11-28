@@ -9,16 +9,18 @@
  * @version: 1.0.0
  */
 
-try {
-  // Get the modal element
-  var modal = document.getElementsByClassName("stop_the_page")[0];
-  var modal2 = document.getElementsByClassName("blocking_the_page")[0];
+function bypass() {
+  try {
+    // Get the modal element
+    var modal = document.getElementsByClassName("stop_the_page")[0];
+    var modal2 = document.getElementsByClassName("blocking_the_page")[0];
 
-  // Remove the modal element
-  modal.parentNode.removeChild(modal);
-  modal2.parentNode.removeChild(modal2);
-} catch (error) {
-  // console.error(error);
+    // Remove the modal element
+    modal.parentNode.removeChild(modal);
+    modal2.parentNode.removeChild(modal2);
+  } catch (error) {
+    // console.error(error);
+  }
 }
 
 // show alert
