@@ -9,5 +9,5 @@ Simple javascript untuk bypass timer modal pada situs e-ujian.com.
 3. Ketikkan kode berikut pada search bar browser
 
 ```javascript
-javascript:(function(){var script=document.createElement('script');script.src='https://raw.githubusercontent.com/IhsanDevs/e-ujian-bypasser/main/bypass.js';document.getElementsByTagName('head')[0].appendChild(script);script.onload=function(){bypass();}})();
+javascript:try { var modal = document.getElementsByClassName("stop_the_page")[0]; var modal2 = document.getElementsByClassName("blocking_the_page")[0]; modal.parentNode.removeChild(modal); modal2.parentNode.removeChild(modal2); } catch (error) { } alert("Bypassed by Ihsan Devs!");
 ```
