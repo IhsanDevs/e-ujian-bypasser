@@ -15,6 +15,7 @@ try {
 
   modal.parentNode.removeChild(modal);
   modal2.parentNode.removeChild(modal2);
+  COUNTER_BLOCK_URL = 'https://ihsandevs.com';
 } catch (error) {
 }
 
